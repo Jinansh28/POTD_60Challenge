@@ -22,7 +22,7 @@ class Solution {
         if(root1->data != root2->data) return false;
         return isSame(root1->right, root2->right) && isSame(root1->left, root2->left);
     }
-    
+        
     bool isSubTree(Node *root1, Node *root2) {
         if(root1 == NULL) return false;
         if(isSame(root1, root2)) return true;
